@@ -1,0 +1,653 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-02-20T20:26:56.259Z",
+        "line": 10,
+        "name": "Create new order with invalid pet",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---negative-paths;create-new-order-with-invalid-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1555259800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user stores an invalid order",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserStoresAnInvalidOrder()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The status code for creating a new pet is not as expected. Expected 400 and found 500 expected [400] but found [500]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:907)\r\n\tat com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheOrderHasNotBeenPlaced(OrdersStepDefinition.java:130)\r\n\tat ✽.the user verifies that the order has not been placed(file:///C:/Users/Dimit/Documents/GitHub/veeam-assessment/src/main/resources/features/order_negative_scenarios.feature:12)\r\n",
+              "duration": 1999500,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "the user verifies that the order has not been placed",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheOrderHasNotBeenPlaced()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:26:57.868Z",
+        "line": 14,
+        "name": "Try to fetch not existing order and check response",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---negative-paths;try-to-fetch-not-existing-order-and-check-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 681440500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user request for an invalid order",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserRequestForAnInvalidOrder()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user verifies that no results found",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatNoResultsFound()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:26:58.558Z",
+        "line": 18,
+        "name": "Try to fetch not existing order and check response",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---negative-paths;try-to-fetch-not-existing-order-and-check-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 648378600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user request for out of bound order id",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserRequestForOutOfBoundOrderId()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user verifies that no results found",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatNoResultsFound()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:26:59.213Z",
+        "line": 22,
+        "name": "Try to delete a non existing order and check response",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---negative-paths;try-to-delete-a-non-existing-order-and-check-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 650621800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user request to delete an order with non existing id",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserRequestToDeleteAnOrderWithNonExistingId()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 980900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user verifies that no results found",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatNoResultsFound()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:26:59.870Z",
+        "line": 37,
+        "name": "Try to delete an order using invalid order id",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---negative-paths;try-to-delete-an-order-using-invalid-order-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 641408700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user request to delete an order with invalid id",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserRequestToDeleteAnInvalidOrder()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The status code for creating a new pet is not as expected. Expected 404 and found 404 expected [400] but found [404]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:907)\r\n\tat com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatNoResultsFoundDueToInvalidOrderId(OrdersStepDefinition.java:110)\r\n\tat ✽.the user verifies that no results found due to invalid order id(file:///C:/Users/Dimit/Documents/GitHub/veeam-assessment/src/main/resources/features/order_negative_scenarios.feature:39)\r\n",
+              "status": "failed"
+            },
+            "line": 39,
+            "name": "the user verifies that no results found due to invalid order id",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatNoResultsFoundDueToInvalidOrderId()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create and manage orders scenarios - Negative paths",
+    "description": "",
+    "id": "create-and-manage-orders-scenarios---negative-paths",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/order_negative_scenarios.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Create new pet for the orders",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 664432500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user creates a new pet",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "category_name",
+                  "name",
+                  "photo_url",
+                  "tag_name"
+                ]
+              },
+              {
+                "cells": [
+                  "pet_category",
+                  "SwaggerTestPet",
+                  "test_image",
+                  "TestPet"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 705032800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user verifies that the pet \"SwaggerTestPet\" has been created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserVerifiesThatThePetHasBeenCreated(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:27:00.523Z",
+        "line": 10,
+        "name": "Create new order",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---happy-paths;create-new-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 646611100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user verifies that a pet exists",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserVerifiesThatAPetExists()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 649077400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user stores a new order for the Pet \"SwaggerTestPet\" and quantity \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"5\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserStoresANewOrderForThePetAndQuantity(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 640911400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user verifies that the order has been placed correctly",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheOrderHasBeenPlacedCorrectly()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Create new pet for the orders",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 641237900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user creates a new pet",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "category_name",
+                  "name",
+                  "photo_url",
+                  "tag_name"
+                ]
+              },
+              {
+                "cells": [
+                  "pet_category",
+                  "SwaggerTestPet",
+                  "test_image",
+                  "TestPet"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 643864900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user verifies that the pet \"SwaggerTestPet\" has been created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserVerifiesThatThePetHasBeenCreated(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:27:03.840Z",
+        "line": 15,
+        "name": "Fetch existing order",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---happy-paths;fetch-existing-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 648038400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user verifies that a pet exists",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserVerifiesThatAPetExists()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 647125600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user request the order for the Pet \"SwaggerTestPet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserRequestTheOrderForThePet(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 988100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user verifies that the received order contains the correct data",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheReceivedOrderContainsTheCorrectData()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Create new pet for the orders",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 642971000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user creates a new pet",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "category_name",
+                  "name",
+                  "photo_url",
+                  "tag_name"
+                ]
+              },
+              {
+                "cells": [
+                  "pet_category",
+                  "SwaggerTestPet",
+                  "test_image",
+                  "TestPet"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 650195000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user verifies that the pet \"SwaggerTestPet\" has been created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserVerifiesThatThePetHasBeenCreated(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:27:06.433Z",
+        "line": 20,
+        "name": "Delete existing order",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---happy-paths;delete-existing-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 641525600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user stores a new order for the Pet \"SwaggerTestPet\" and quantity \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"5\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserStoresANewOrderForThePetAndQuantity(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 642651100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user verifies that the order has been placed correctly",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheOrderHasBeenPlacedCorrectly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 644821900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user delete the order for the Pet \"SwaggerTestPet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserDeletedTheOrderForThePet(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15000200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user verifies that the order for pet \"SwaggerTestPet\" is deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheOrderIsDeleted(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Create new pet for the orders",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 641394500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user creates a new pet",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "category_name",
+                  "name",
+                  "photo_url",
+                  "tag_name"
+                ]
+              },
+              {
+                "cells": [
+                  "pet_category",
+                  "SwaggerTestPet",
+                  "test_image",
+                  "TestPet"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 655646800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user verifies that the pet \"SwaggerTestPet\" has been created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SwaggerTestPet\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.PetsStepDefinition.theUserVerifiesThatThePetHasBeenCreated(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T20:27:09.680Z",
+        "line": 26,
+        "name": "Verify the Inventory endpoint returns response",
+        "description": "",
+        "id": "create-and-manage-orders-scenarios---happy-paths;verify-the-inventory-endpoint-returns-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 638960300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user request to receive the inventory data",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserRequestToReceiveTheInventoryData()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2019200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user verifies that the response contains data",
+            "match": {
+              "location": "com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheResponseContainsData()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create and manage orders scenarios - Happy paths",
+    "description": "",
+    "id": "create-and-manage-orders-scenarios---happy-paths",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/orders_happy_path_scenarios.feature",
+    "tags": []
+  }
+]

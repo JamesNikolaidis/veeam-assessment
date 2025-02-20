@@ -1,0 +1,14 @@
+com\veeam\assessment\dimitris\nikolaidis\stepDefinitions\TestContextConfiguration.class
+com\veeam\assessment\dimitris\nikolaidis\models\Order.class
+com\veeam\assessment\dimitris\nikolaidis\utils\APIUtils$2.class
+com\veeam\assessment\dimitris\nikolaidis\configuration\CucumberConfiguration.class
+com\veeam\assessment\dimitris\nikolaidis\models\Category.class
+com\veeam\assessment\dimitris\nikolaidis\utils\APIUtils.class
+com\veeam\assessment\dimitris\nikolaidis\models\Tag.class
+com\veeam\assessment\dimitris\nikolaidis\utils\APIUtils$1.class
+com\veeam\assessment\dimitris\nikolaidis\client\OrderResponse.class
+com\veeam\assessment\dimitris\nikolaidis\configuration\SpringContext.class
+com\veeam\assessment\dimitris\nikolaidis\stepDefinitions\OrdersStepDefinition.class
+com\veeam\assessment\dimitris\nikolaidis\client\PetResponse.class
+com\veeam\assessment\dimitris\nikolaidis\stepDefinitions\PetsStepDefinition.class
+com\veeam\assessment\dimitris\nikolaidis\models\Pet.class

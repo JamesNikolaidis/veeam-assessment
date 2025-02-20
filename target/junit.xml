@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="16.497">
+    <testcase classname="Create and manage orders scenarios - Negative paths" name="Create new order with invalid pet" time="1.59">
+        <failure message="The status code for creating a new pet is not as expected. Expected 400 and found 500 expected [400] but found [500]" type="java.lang.AssertionError"><![CDATA[Then the user stores an invalid order.......................................passed
+And the user verifies that the order has not been placed....................failed
+
+StackTrace:
+java.lang.AssertionError: The status code for creating a new pet is not as expected. Expected 400 and found 500 expected [400] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatTheOrderHasNotBeenPlaced(OrdersStepDefinition.java:130)
+	at ✽.the user verifies that the order has not been placed(file:///C:/Users/Dimit/Documents/GitHub/veeam-assessment/src/main/resources/features/order_negative_scenarios.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Negative paths" name="Try to fetch not existing order and check response" time="0.683">
+        <system-out><![CDATA[Given the user request for an invalid order.................................passed
+Then the user verifies that no results found................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Negative paths" name="Try to fetch not existing order and check response 2" time="0.65">
+        <system-out><![CDATA[Given the user request for out of bound order id............................passed
+Then the user verifies that no results found................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Negative paths" name="Try to delete a non existing order and check response" time="0.651">
+        <system-out><![CDATA[Given the user request to delete an order with non existing id..............passed
+Then the user verifies that no results found................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Negative paths" name="Try to delete an order using invalid order id" time="0.643">
+        <failure message="The status code for creating a new pet is not as expected. Expected 404 and found 404 expected [400] but found [404]" type="java.lang.AssertionError"><![CDATA[Given the user request to delete an order with invalid id...................passed
+Then the user verifies that no results found due to invalid order id........failed
+
+StackTrace:
+java.lang.AssertionError: The status code for creating a new pet is not as expected. Expected 404 and found 404 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.veeam.assessment.dimitris.nikolaidis.stepDefinitions.OrdersStepDefinition.theUserVerifiesThatNoResultsFoundDueToInvalidOrderId(OrdersStepDefinition.java:110)
+	at ✽.the user verifies that no results found due to invalid order id(file:///C:/Users/Dimit/Documents/GitHub/veeam-assessment/src/main/resources/features/order_negative_scenarios.feature:39)
+]]></failure>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Happy paths" name="Create new order" time="3.311">
+        <system-out><![CDATA[Given the user creates a new pet............................................passed
+Then the user verifies that the pet "SwaggerTestPet" has been created.......passed
+Given the user verifies that a pet exists...................................passed
+Then the user stores a new order for the Pet "SwaggerTestPet" and quantity "5".passed
+And the user verifies that the order has been placed correctly..............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Happy paths" name="Fetch existing order" time="2.585">
+        <system-out><![CDATA[Given the user creates a new pet............................................passed
+Then the user verifies that the pet "SwaggerTestPet" has been created.......passed
+Given the user verifies that a pet exists...................................passed
+And the user request the order for the Pet "SwaggerTestPet".................passed
+Then the user verifies that the received order contains the correct data....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Happy paths" name="Delete existing order" time="3.242">
+        <system-out><![CDATA[Given the user creates a new pet............................................passed
+Then the user verifies that the pet "SwaggerTestPet" has been created.......passed
+Given the user stores a new order for the Pet "SwaggerTestPet" and quantity "5".passed
+And the user verifies that the order has been placed correctly..............passed
+Then the user delete the order for the Pet "SwaggerTestPet".................passed
+And the user verifies that the order for pet "SwaggerTestPet" is deleted....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create and manage orders scenarios - Happy paths" name="Verify the Inventory endpoint returns response" time="1.938">
+        <system-out><![CDATA[Given the user creates a new pet............................................passed
+Then the user verifies that the pet "SwaggerTestPet" has been created.......passed
+Given the user request to receive the inventory data........................passed
+Then the user verifies that the response contains data......................passed
+]]></system-out>
+    </testcase>
+</testsuite>
