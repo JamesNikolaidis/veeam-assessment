@@ -1,5 +1,18 @@
 # Execution tutorial
 
+### Before test execution !IMPORTANT!~
+Please, when you download this repo, run the following commands 
+
+<code> mvn clean compile </code> 
+
+or 
+
+<code> mvn clean </code>
+
+<code> mvn compile </code> 
+
+Those steps are required because when downloading the project from github does not have the compiled files ready to run the test suite. 
+
 ### Test suite Configuration
 The configuration for the test suite can be modified and found in the application.properties file under the resources folder.
 It contains the endpoints and other configuration.
