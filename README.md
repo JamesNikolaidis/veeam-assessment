@@ -9,6 +9,20 @@
   <li>Maven dependency management</li>
 </ul>
 
+### Project Structure
+Since the implementation made using Spring boot , the project structure may be different that a Java - Junit project.
+Starting, the java code is located in the path 
+
+<code>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/java/....</code>
+
+The test scenarios are location under the main directory and specifically here, 
+
+<a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/resources/features</a> 
+
+along with the spring boot properties.
+The test-suite runner is located in the test directory here, 
+
+<a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/test/java/com/veeam/assessment/dimitris/nikolaidis</a> 
 
 ### Before test execution !IMPORTANT! 
 Please, when you download this repo, run the following commands 
@@ -41,6 +55,8 @@ Run the test suite with the following command
 example
 
 <code> mvn clean test -Dapplication.url=https://a_new_test_url.com</code>
+
+The available properties can be found here <a>https://github.com/JamesNikolaidis/veeam-assessment/blob/main/src/main/resources/application.properties</a>
 
 
 ### Execute test framework using the run-test.sh file
