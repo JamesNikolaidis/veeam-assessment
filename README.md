@@ -13,7 +13,7 @@
 Since the implementation made using Spring boot , the project structure may be different that a Java - Junit project.
 Starting, the java code is located in the path 
 
-<code>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/java/....</code>
+<code>https://github.com/JamesNikolaidis/veeam-assignment/tree/main/src/main/java/....</code>
 
 The test scenarios are location under the <b style='color:red !important;'>main</b> directory and specifically here, 
 
@@ -22,7 +22,7 @@ The test scenarios are location under the <b style='color:red !important;'>main<
 along with the spring boot properties.
 The test-suite runner is located in the <b style='color:red !important;'>test</b> directory here, 
 
-<a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/test/java/com/veeam/assignment/dimitris/nikolaidis</a> 
+<a>https://github.com/JamesNikolaidis/veeam-assignment/tree/main/src/test/java/com/veeam/assignment/dimitris/nikolaidis</a> 
 
 ### Before test execution !IMPORTANT! 
 Please, when you download this repo, run the following commands 
