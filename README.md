@@ -15,12 +15,12 @@ Starting, the java code is located in the path
 
 <code>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/java/....</code>
 
-The test scenarios are location under the main directory and specifically here, 
+The test scenarios are location under the <b>main</b> directory and specifically here, 
 
 <a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/resources/features</a> 
 
 along with the spring boot properties.
-The test-suite runner is located in the test directory here, 
+The test-suite runner is located in the <b>test</b> directory here, 
 
 <a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/test/java/com/veeam/assessment/dimitris/nikolaidis</a> 
 
@@ -40,6 +40,16 @@ Those steps are required because when downloading the project from github does n
 ### Test suite Configuration
 The configuration for the test suite can be modified and found in the application.properties file under the resources folder.
 It contains the endpoints and other configuration.
+
+### Execute test framework through Code Development IDE
+In order to run the test framework through a Code Developement Editor ( Eclipse, Visual Studio Code or Intellij IDEA ) , you need to navigate in the directory
+
+<a>https://github.com/JamesNikolaidis/veeam-assessment/blob/main/src/test/java/com/veeam/assessment/dimitris/nikolaidis/ApplicationJunitTest.java</a>
+
+And click on the "Play" button that the editor provides.
+If the "Play" button is not available , please open a terminal in this directory and run the following command
+
+<code>mvn -Dtest=ApplicationJunitTest  test </code>
 
 ### Execute test framework through terminal using pre-defined configuration
 Run the test suite with the following command
