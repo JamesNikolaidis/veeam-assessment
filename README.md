@@ -3,7 +3,7 @@
 ### Run requirements 
 
 <ul>
-  <li>Linux or Windows OS</li>
+  <li>Linux , Windows or Mac OS</li>
   <li>Bash terminal which allows run-tests.sh to run ( available if download the git tool )</li>
   <li>Java 17 jdk installed</li>
   <li>Maven dependency management</li>
