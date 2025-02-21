@@ -60,4 +60,12 @@ to run the run-test.sh script with your own property configuration , run the fol
 
 <code> ./run-test.sh "-DfirstProperty=test -DsecondProperty=test1 -D...."     </code> 
 
+### Access Test Reports
+The reports of the test suite exeuction is located , through different formats in the directories
+<ul>
+  <li>Cucumber report => target/reports/cucumber</li>
+  <li>XML report => target/junit.xml</li>
+  <li>JSON report => target/report.json</li>
+</ul>
+
 
