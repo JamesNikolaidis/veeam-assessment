@@ -1,6 +1,16 @@
 # Execution tutorial
 
-### Before test execution !IMPORTANT!~
+### Run requirements 
+
+<ul>
+  <li>Linux or Windows OS</li>
+  <li>Bash terminal which allows run-tests.sh to run ( available if download the git tool )</li>
+  <li>Java 17 jdk installed</li>
+  <li>Maven dependency management</li>
+</ul>
+
+
+### Before test execution !IMPORTANT! 
 Please, when you download this repo, run the following commands 
 
 <code> mvn clean compile </code> 
