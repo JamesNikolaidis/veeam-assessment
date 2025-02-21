@@ -17,12 +17,12 @@ Starting, the java code is located in the path
 
 The test scenarios are location under the <b style='color:red !important;'>main</b> directory and specifically here, 
 
-<a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/resources/features</a> 
+<a>https://github.com/JamesNikolaidis/veeam-assignment/tree/main/src/main/resources/features</a> 
 
 along with the spring boot properties.
 The test-suite runner is located in the <b style='color:red !important;'>test</b> directory here, 
 
-<a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/test/java/com/veeam/assessment/dimitris/nikolaidis</a> 
+<a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/test/java/com/veeam/assignment/dimitris/nikolaidis</a> 
 
 ### Before test execution !IMPORTANT! 
 Please, when you download this repo, run the following commands 
@@ -44,7 +44,7 @@ It contains the endpoints and other configuration.
 ### Execute test framework through Code Development IDE
 In order to run the test framework through a Code Developement Editor ( Eclipse, Visual Studio Code or Intellij IDEA ) , you need to navigate in the directory
 
-<a>https://github.com/JamesNikolaidis/veeam-assessment/blob/main/src/test/java/com/veeam/assessment/dimitris/nikolaidis/ApplicationJunitTest.java</a>
+<a>https://github.com/JamesNikolaidis/veeam-assignment/blob/main/src/test/java/com/veeam/assignment/dimitris/nikolaidis/ApplicationJunitTest.java</a>
 
 And click on the "Play" button that the editor provides.
 If the "Play" button is not available , please open a terminal in this directory and run the following command
@@ -66,7 +66,7 @@ example
 
 <code> mvn clean test -Dapplication.url=https://a_new_test_url.com</code>
 
-The available properties can be found here <a>https://github.com/JamesNikolaidis/veeam-assessment/blob/main/src/main/resources/application.properties</a>
+The available properties can be found here <a>https://github.com/JamesNikolaidis/veeam-assignment/blob/main/src/main/resources/application.properties</a>
 
 
 ### Execute test framework using the run-test.sh file
