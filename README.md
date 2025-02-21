@@ -15,12 +15,12 @@ Starting, the java code is located in the path
 
 <code>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/java/....</code>
 
-The test scenarios are location under the <b>main</b> directory and specifically here, 
+The test scenarios are location under the <b style='color:red !important;'>main</b> directory and specifically here, 
 
 <a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/main/resources/features</a> 
 
 along with the spring boot properties.
-The test-suite runner is located in the <b>test</b> directory here, 
+The test-suite runner is located in the <b style='color:red !important;'>test</b> directory here, 
 
 <a>https://github.com/JamesNikolaidis/veeam-assessment/tree/main/src/test/java/com/veeam/assessment/dimitris/nikolaidis</a> 
 
